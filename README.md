@@ -3,7 +3,9 @@ This is a Matlab implementation of KSPIC (k-space subtraction with intensity and
 
 Suitable for data which require the subtraction between two datasets with different contrasts, such as Fresh Blood Imaging (FBI, M. Miyazaki, JMRI, 2000), Flow Sensitive Dephasing (AN Priest, MRM 2012, 2014), ASL and CE-MRA.
 
-Split-Bregman and POCS-SPIRiT were used for CS and PI reconstruction respectively. Conventional k-space subtraction and magnitude-subtraction methods are also added for comparison.
+Split-Bregman and POCS-SPIRiT are used for CS and PI reconstruction respectively. 
+
+Conventional k-space subtraction and magnitude-subtraction methods are also added for comparison.
 
 The algorithm is described in the paper "Highly Accelerated Subtractive Femoral NCE-MRA using Compressed Sensing with k-space Subtraction, Phase and Intensity Correction, Magn Res Med, 2021".
 
