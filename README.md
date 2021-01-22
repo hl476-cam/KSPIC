@@ -10,7 +10,7 @@ Conventional k-space subtraction and magnitude-subtraction methods are also adde
 The algorithm is described in the paper "Highly Accelerated Subtractive Femoral NCE-MRA using Compressed Sensing with k-space Subtraction, Phase and Intensity Correction, Magn Res Med, 2021".
 
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 Please see license files (./licenses) for accompanied codes (which also include own modifications) of:
 1) mrics.m by Tom Goldstein (TomGoldstein1@gmail.com, https://www.cs.umd.edu/~tomg/projects/split_bregman/
