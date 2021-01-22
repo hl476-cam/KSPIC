@@ -1,5 +1,5 @@
 # KSPIC
-KSPIC (k-space subtraction with intensity and phase correction) reconstruction for undersampled subtractive MR angiography data accelerated by compressed sensing, parallel imaging and partial Fourier sampling.
+This is a Matlab implementation of KSPIC (k-space subtraction with intensity and phase correction) reconstruction for undersampled subtractive MR angiography data accelerated by compressed sensing, parallel imaging and partial Fourier sampling.
 
 Suitable for data which require the subtraction between two datasets with different contrasts, such as Fresh Blood Imaging (FBI, M. Miyazaki, JMRI, 2000), Flow Sensitive Dephasing (AN Priest, MRM 2012, 2014), ASL and CE-MRA.
 
