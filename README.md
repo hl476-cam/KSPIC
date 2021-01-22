@@ -7,7 +7,7 @@ Split-Bregman and POCS-SPIRiT are used for CS and PI reconstruction respectively
 
 Conventional k-space subtraction and magnitude-subtraction methods are also added for comparison.
 
-The algorithm is described in the paper "Highly Accelerated Subtractive Femoral NCE-MRA using Compressed Sensing with k-space Subtraction, Phase and Intensity Correction, Magn Res Med, 2021".
+The algorithm is described in the paper "Hao Li, et al., Highly Accelerated Subtractive Femoral NCE-MRA using Compressed Sensing with k-space Subtraction, Phase and Intensity Correction, Magn Res Med, 2021".
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
