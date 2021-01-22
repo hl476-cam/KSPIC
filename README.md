@@ -22,4 +22,4 @@ Example femoral Fresh Blood Imaging (FBI) MRA datasets from a healthy volunteer 
 Matrix size: 320(x)*320(y)*80(z)*4(compressed channel)
 Acceleration factor: 20x.
 
-Copyright (c) 2021, Hao Li, University of Cambridge, United Kingdom. All rights reserved.
+Copyright, Hao Li, University of Cambridge, United Kingdom. All rights reserved.
