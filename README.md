@@ -10,7 +10,9 @@ Conventional k-space subtraction and magnitude-subtraction methods are also adde
 The algorithm is described in the paper "Hao Li, et al., Highly Accelerated Subtractive Femoral NCE-MRA using Compressed Sensing with k-space Subtraction, Phase and Intensity Correction, Magn Res Med, 2021".
 
 Example femoral Fresh Blood Imaging (FBI) MRA datasets from a healthy volunteer are provided in ./data.
+
 Matrix size: 320(x) * 320(y) * 80(z) * 4(compressed channel)
+
 Acceleration factor: 20x.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
