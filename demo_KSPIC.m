@@ -54,10 +54,9 @@ pattern = abs(squeeze(rawD(1,:,:,1)));
 pattern(pattern>eps) = 1;   
 Hdr.pfSize = fun_pfsize(pattern);   % Partial Fourier length in y and z
 Hdr.pattern = pattern;              % Sampling pattern
-totalNum = sum(pattern(:)~=0);  
-Hdr.totalNum = totalNum;            % The number of total sampling points
+Hdr.totalNum = sum(pattern(:)~=0);  % The number of total sampling points
 
-figure();imshow(pattern');title(['Sampling point number:',num2str(totalNum)]);
+figure();imshow(pattern');title(['Sampling point number:',num2str(Hdr.totalNum)]);
 
 calibMask=findFullCenter(pattern);  % Find the fully sampled central region for calibration in SPIRiT
 Hdr.caliSize=size(calibMask);       % The size of the calibration region 
@@ -66,25 +65,26 @@ Hdr.calibMask=calibMask;            % A mask of the calibration region
 Hdr.nCoil=Hdr.fullSize(4);          % Channel number
 
 % Hdr.centreSize=Hdr.caliSize;
-Hdr.centreSize=[28,10];             % The size of the central region used for phase correction.
+Hdr.centreSize=[28,10];             % The size of the central region used for phase correction. Can use the calibration region size instead.
 
 
-%% Intensity correction
+%% Intensity correction (IC)
 
 
 interval=round(Hdr.fullSize(1)/32); % Sampling interval (equally-spaced sampling of axial slices along the x-direction)
 
-Hdr.IC=fun_IC(rawD, rawB, Hdr, Param, interval,true);
+Hdr.IC=fun_IC(rawD, rawB, Hdr, Param, interval,true);   % Robust regression to acquire the weighting factor for background suppression.
 
 %% Reconstruction
 
-gcp;  %Starting parallel pool
+gcp;  % Starting parallel pool
 
 timeStart=clock;
 
 fsz=Hdr.fullSize;
 
-[result_KSPIC,result_KS,result_MSIC,result_MS,result_Bright,result_Dark]=deal(zeros(fsz(1),fsz(2),fsz(3)));
+% KSPIC, conventional KS, conventional MS with IC, MS, unsubtracted bright-blood images, unsubtracted dark-blood images:
+[result_KSPIC,result_KS,result_MSIC,result_MS,result_Bright,result_Dark]=deal(zeros(fsz(1),fsz(2),fsz(3))); 
 
 sliceD=squeeze(rawD(1,:,:,:));  % Load one slice of dark-blood data for pre-calculating parameters for CS recon
 
@@ -92,8 +92,7 @@ Param=fun_CSprep(sliceD,Param); % Pre-calculate some parameters to reduce comput
 
 fprintf('Reconstruction started.\r');
 
-
-parfor iSlice=1:fsz(1)
+parfor iSlice=1:fsz(1)  % slice-by-slice along the x dimension
     
     sliceB=squeeze(rawB(iSlice,:,:,:));
     sliceD=squeeze(rawD(iSlice,:,:,:));
@@ -116,7 +115,7 @@ fprintf('Reconstruction time=%dmin%ds\r',floor(timeTotal/60),round(rem(timeTotal
 
 result.KS=real(flip(result_KS,1));
 result.KS(result.KS<0)=0;
-MIP.KS=max(result.KS,[],3);
+MIP.KS=max(result.KS,[],3); % Maximum intensity projection (coronal)
 figure;imshow(MIP.KS,[]);title('K-space subtraction')
 
 
