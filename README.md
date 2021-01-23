@@ -19,7 +19,7 @@ Please see license files (./licenses) for accompanied codes (which also include 
 3) adapt_array_2d.m by Ricardo Otazo (CBI, New York University)
 
 Example femoral Fresh Blood Imaging (FBI) MRA datasets from a healthy volunteer are provided in ./data.
-Matrix size: 320(x)*320(y)*80(z)*4(compressed channel)
+Matrix size: 320(x) * 320(y) * 80(z) * 4(compressed channel)
 Acceleration factor: 20x.
 
 Copyright, Hao Li, University of Cambridge, United Kingdom. All rights reserved.
