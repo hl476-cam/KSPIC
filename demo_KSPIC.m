@@ -9,15 +9,15 @@
 
 % Conventional k-space subtraction (KS) and magnitude-subtraction (MS) methods are also added for comparison.
 
+% Example femoral Fresh Blood Imaging (FBI) MRA datasets from a healthy volunteer are provided in ./data.
+% Matrix size: 320(x) * 320(y) * 80(z) * 4(compressed channel)
+% Acceleration factor: 20x.
+
 % Please see license files (./licenses) for this program and accompanied codes of:
 % 1) mrics.m by Tom Goldstein (TomGoldstein1@gmail.com, https://www.cs.umd.edu/~tomg/projects/split_bregman/
 % 2) SPIRiT v0.3 and sparseMRI v0.2 by Michael Lustig (under LICENSE_SPIRiT, mlustig@eecs.berkeley.edu, 
 %    https://people.eecs.berkeley.edu/~mlustig/Software.html)
 % 3) adapt_array_2d.m by Ricardo Otazo (CBI, New York University)
-
-% Example femoral Fresh Blood Imaging (FBI) MRA datasets from a healthy volunteer are provided in ./data.
-% Matrix size: 320(x) * 320(y) * 80(z) * 4(compressed channel)
-% Acceleration factor: 20x.
 
 % Copyright, Hao Li, University of Cambridge, United Kingdom. All rights reserved.
 
