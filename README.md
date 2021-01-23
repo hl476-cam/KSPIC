@@ -12,7 +12,7 @@ The algorithm is described in the paper "Hao Li, et al., Highly Accelerated Subt
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-Please see license files (./licenses) for accompanied codes (which also include own modifications) of:
+Please see license files (./licenses) for this program and accompanied codes (which also include own modifications) of:
 1) mrics.m by Tom Goldstein (TomGoldstein1@gmail.com, https://www.cs.umd.edu/~tomg/projects/split_bregman/
 2) SPIRiT v0.3 and sparseMRI v0.2 by Michael Lustig (under LICENSE_SPIRiT, mlustig@eecs.berkeley.edu, 
    https://people.eecs.berkeley.edu/~mlustig/Software.html)
