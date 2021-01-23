@@ -9,6 +9,9 @@ Conventional k-space subtraction and magnitude-subtraction methods are also adde
 
 The algorithm is described in the paper "Hao Li, et al., Highly Accelerated Subtractive Femoral NCE-MRA using Compressed Sensing with k-space Subtraction, Phase and Intensity Correction, Magn Res Med, 2021".
 
+Example femoral Fresh Blood Imaging (FBI) MRA datasets from a healthy volunteer are provided in ./data.
+Matrix size: 320(x) * 320(y) * 80(z) * 4(compressed channel)
+Acceleration factor: 20x.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -17,9 +20,5 @@ Please see license files (./licenses) for this program and accompanied codes (wh
 2) SPIRiT v0.3 and sparseMRI v0.2 by Michael Lustig (under LICENSE_SPIRiT, mlustig@eecs.berkeley.edu, 
    https://people.eecs.berkeley.edu/~mlustig/Software.html)
 3) adapt_array_2d.m by Ricardo Otazo (CBI, New York University)
-
-Example femoral Fresh Blood Imaging (FBI) MRA datasets from a healthy volunteer are provided in ./data.
-Matrix size: 320(x) * 320(y) * 80(z) * 4(compressed channel)
-Acceleration factor: 20x.
 
 Copyright, Hao Li, University of Cambridge, United Kingdom. All rights reserved.
