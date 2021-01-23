@@ -11,8 +11,7 @@ The algorithm is described in the paper "Hao Li, et al., Highly Accelerated Subt
 
 Example femoral Fresh Blood Imaging (FBI) MRA datasets from a healthy volunteer are provided in ./data.
 
-Matrix size: 320(x) * 320(y) * 80(z) * 4(compressed channel)
-
+Matrix size: 320(x) * 320(y) * 80(z) * 4(compressed channel); 
 Acceleration factor: 20x.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
