@@ -1,0 +1,16 @@
+function  res = TVOP()
+
+%res = TVOP()
+%
+% Implements a spatial finite-differencing operator.
+%
+% (c) Michael Lustig 2007
+
+res.adjoint = 0;
+res.2Don3D = 0;
+if(nargin)
+    
+    
+
+res = class(res,'TVOP');
+
